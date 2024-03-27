@@ -149,6 +149,15 @@ section > h1 {
     .coco {
         display: none;
     }
+    .make {
+        width: 400px;
+    }
+    .batom {
+        width: 500px;
+    }
+    .esmalte {
+        width: 500px;
+    }
 }
 
 @media (max-width:750px) {
