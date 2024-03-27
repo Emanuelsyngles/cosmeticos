@@ -80,16 +80,17 @@ header {
 
     .menu_mobile > ul > li > a{
         text-decoration: none;
-        color: var(--cor-do-titulo-header);
+        color: #e5e5e5;
     }
 
     #menustop {
         display: none;
     }
     .carrinho {
-        position: relative;
+        position: absolute;
         top: 2px;
         left: 290px;
+        color: #fff;
     }
 }
 

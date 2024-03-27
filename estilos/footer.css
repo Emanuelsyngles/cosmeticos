@@ -9,6 +9,7 @@ footer > h2 {
     font-family: 'Madimi One';
 }
 
+
 .links_finais > a {
     display: flex;
     justify-content: center;
@@ -20,4 +21,8 @@ footer > h2 {
 .links_finais > a:hover {
     color: var(--cor-amarela);
     transition: .5s;
+}
+
+.redes > img{
+    cursor: pointer;
 }
