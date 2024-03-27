@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+
+footer {
+    background-color: var(--cor-do-footer);
+}
+
+footer > h2 {
+    color: var(--cor-do-titulo-header);
+    font-family: 'Madimi One';
+}
+
+.links_finais > a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor-preta);
+    font-size: 25px;
+}
+
+.links_finais > a:hover {
+    color: var(--cor-amarela);
+    transition: .5s;
+}
