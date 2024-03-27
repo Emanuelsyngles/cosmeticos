@@ -12,8 +12,9 @@ function menufechado() {
 
 function fecharmenu() {
     lista.style.display = 'none'
-    menumobile.style.background = '#fff'
+    menumobile.style.background = '#BEC2B1'
     menuclose.style.display = 'block'
     menustop.style.display = 'none'
     menustop.style.background = '#fff'
 }
+

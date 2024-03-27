@@ -8,55 +8,60 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <title>Dingou cosméticos</title>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <ul>
-        <h2>Dingou|cosméticos</h2>
-        <li><a href="#">Cósméticos</a></li>
-        <li><a href="#">Perfumes e perfumaria</a></li>
-        <li><a href="#">Maquiagem</a></li>
-        <li><a href="#">Outros produtos</a></li>
-      </ul>
+    <div class="inicio">
+      <header>
+        <div class="container">
+          <ul>
+            <h2>Dingou|cosméticos</h2>
+            <li><a href="#">Cósméticos</a></li>
+            <li><a href="#">Perfumes e perfumaria</a></li>
+            <li><a href="#">Maquiagem</a></li>
+            <li><a href="#">Outros produtos</a></li>
+          </ul>
+        </div>
+        <div class="menu_mobile">
+          <img onclick="menufechado()" id="menuclose" src="img/iconemenu.png" alt="icone menu mobile fechado">
+          <img onclick="fecharmenu()" id="menustop" src="img/fecharmenu.png" alt="icone menu mobile aberto">
+          <ul id="ulmenu">
+            <li><a href="#">Cósméticos</a></li>
+            <li><a href="#">Perfumes e perfumaria</a></li>
+            <li><a href="#">Maquiagem</a></li>
+            <li><a href="#">Outros produtos</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="apresentacao">
+          <div class="frase">
+          </div>
+          <img src="/img/coco.png" alt="">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/principal.png" data-swiper-autoplay="1000" alt="imagem principal ilustrativa">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/secundaria.png" alt="perfume e flores ilustrativos">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/mulher-removebg-preview.png" alt="mulher ilustrativa">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cesta.png" alt="cesta de cóstméticos">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/lavanda.png" alt="lavanda">
+                </div>
+            <!---<div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+        </div>
+      </main>
     </div>
-    <div class="menu_mobile">
-      <img onclick="menufechado()" id="menuclose" src="img/iconemenu.png" alt="icone menu mobile fechado">
-      <img onclick="fecharmenu()" id="menustop" src="img/fecharmenu.png" alt="icone menu mobile aberto">
-      <ul id="ulmenu">
-        <li><a href="#">Cósméticos</a></li>
-        <li><a href="#">Perfumes e perfumaria</a></li>
-        <li><a href="#">Maquiagem</a></li>
-        <li><a href="#">Outros produtos</a></li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <div class="apresentacao">
-      <img class="img_mulher" src="img/mulher.png" alt="mulher cabelos cacheados ilustrativo">
-      <div class="frase">
-        <h4>O melhor</h4>
-        <h3>Feito</h3>
-        <h2>Para</h2>
-        <h1>VOCÊ</h1>
-      </div>
-    </div>
-    <div class="cor_vibrante">
-      <h2>todos</h2>
-      <img src="img/cor.jpg" alt="cores vibrantes">
-      <h3>Diferente</h3>
-    </div>
-    <div class="mulher_maquiada">
-      <img class="mulher_maqui" src="img/mulher_maquiada.jpg" alt="Mulher maquiada ilustrativa">
-    </div>
-    <div class="mulher_cabelorosa">
-      <h2>Os</h2>
-      <img src="img/mulhercabelorosa.jpg" alt="Mulher com cabelo pintaado de rosa">
-      <h3>Dias</h3>
-    </div>
-  </main>
   <section class="sessao_cards">
     <h1>Nossos produtos</h1>
     <div class="container_1">
@@ -83,8 +88,8 @@
       </div>
       <div class="card">
         <h3>Perfumária</h3>
-        <img src="img/perfume.jpg" alt="perfume ilustrativo">   
-        <p>A fragrância do lavandas é a 8 oitava maravilha do mundo</p>    
+        <img src="img/perfume.jpg" alt="perfume ilustrativo">
+        <p>A fragrância do lavandas é a 8 oitava maravilha do mundo</p>
       </div>
     </div>
   </section>
@@ -121,5 +126,16 @@
   </footer>
 </body>
 <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  }
+});</script>
 
 </html>

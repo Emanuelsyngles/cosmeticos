@@ -11,22 +11,21 @@
 }
 
 body {
-    background-image:url(../img/girl-6058990_1280.jpg);
-    max-width: 1500px;
+    background-color:var(--cor-body) ;
+    max-width: 1900px;
     margin: auto;
 }
 
 :root {
-    --cor-do-titulo-header:#E58A83;
-    --cor-dos-links-header: #E64C85;
+    --cor-do-titulo-header:#a2261d;
+    --cor-dos-links-header: #636363;
     --cor-vermelha:#ff0303;
-    --cor-body: #c9c9c9;
     --cor-h4-main: #a622ff;
     --cor-h3-main: #c7a35f;
     --cor-h2-main: #2ec052;
     --cor-h1-main: #396ddb;
     --cor-h1-section:#4f1974;
-    --cor-cards:#dedbdb;
+    --cor-cards:#ECDACE;
     --cor-preta: #000;
     --cor-branca:#fff;
     --cor-amarela:rgb(255, 255, 45);

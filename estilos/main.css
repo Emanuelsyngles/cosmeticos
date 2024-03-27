@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Anton&display=swap');
 
 
+main {
+    background-color: #BEC2B1;
+}
+
+.inicio {
+    background-color: #BEC2B1;
+}
+
 .apresentacao {
     display: flex;
     justify-content: center;
@@ -11,84 +19,27 @@
     font-family:'Anton';
 }
 
-.img_mulher {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: 2px solid rgb(95, 106, 255);
-    margin-bottom: .5em;
+.img_inicial {
+    width: 900px;
 }
 
-.frase > h4 {
-    color: var(--cor-h4-main)
-}
-.frase > h3 {
-    color: var(--cor-h3-main);
-}
-.frase > h2 {
-    color: var(--cor-h2-main);
-}
-.frase > h1 {
-    color: var(--cor-h1-main);
+
+.swiper{
+    width: 400px;
+    height: 400px;    
+    padding: 1px;
 }
 
-.cor_vibrante {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(202deg);
-    margin: auto;
-    margin-top: 5em;
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(92, 92, 179));
-    border-radius: 10px;
-    border-bottom: 4px solid var(--cor-branca);
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
 }
 
-.cor_vibrante > h2 {
-    transform: rotate(180deg);
-    color:var(--cor-amarela) ;
-    font-family:'Anton';
-    font-size: 15px;
-}
-
-.cor_vibrante > h3 {
-    transform: rotate(90deg);
-    color: var(--cor-vermelha-clara);
-}
-
-.mulher_cabelorosa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-22deg);
-    margin: auto;
-    margin-top: 7%;
-    background: linear-gradient(to right, rgb(89, 0, 255), rgb(194, 93, 62));
-    border-radius: 10px;
-    margin-bottom: 25%;
-    border-top: 4px solid var(--cor-branca);
-    font-family: 'Anton'
-}
-
-.mulher_cabelorosa > h2 {
-    color: var(--cor-branca);
-}
-
-.mulher_cabelorosa > h3 {
-    color: var(--cor-vermelha-clara);
-}
-
-.mulher_maquiada {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-60deg);
-    margin: auto;
-    margin-top: 5em;
-}
-
-.mulher_maqui {
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border: 2px solid rgb(95, 106, 255);
-    border-radius:72% 28% 74% 26% / 29% 74% 26% 71%  ;
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+    text-align: center;
 }

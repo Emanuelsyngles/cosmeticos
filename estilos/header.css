@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
 
+header {
+    background-color: #BEC2B1;
+    height: 100px;
+    margin-top: -50px;
+    width: 800px;
+}
+
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 .container > ul > h2 {
     color: var(--cor-do-titulo-header);
     font-family: 'Madimi One';
+    margin-top: 1em;
 }
 
 .container > ul {
@@ -21,6 +29,7 @@
 
 .container > ul > li {
     list-style: none;
+    margin-top: 2em;
 }
 
 .container > ul > li > a{
@@ -71,3 +80,7 @@
         display: none;
     }
 }
+
+
+
+

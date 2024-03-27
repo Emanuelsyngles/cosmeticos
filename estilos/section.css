@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+section {
+    background-color: #EDD2C9;
+}
+
 section > h1 {
     text-align: center;
     font-size: 40px;
