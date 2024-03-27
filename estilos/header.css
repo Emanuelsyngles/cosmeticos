@@ -86,6 +86,11 @@ header {
     #menustop {
         display: none;
     }
+    .carrinho {
+        position: relative;
+        top: 2px;
+        left: 290px;
+    }
 }
 
 @media (max-width:600px) {
