@@ -97,7 +97,7 @@ section > h1 {
 }
 
 .feliz {
-    background-color: var(--verde-escuro);
+    background-color: var(--cor-branca);
     height: 500px;
     background-repeat: no-repeat;
     font-family: 'Quicksand';
@@ -108,7 +108,7 @@ section > h1 {
     text-align: center;
     color: rgb(37, 159, 163);
     margin-top: -30%;
-    margin-right: 24%;
+    margin-right: 14%;
 }
 
 .cosmeticos  {
