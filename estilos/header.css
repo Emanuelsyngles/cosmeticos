@@ -81,6 +81,12 @@ header {
     }
 }
 
+@media (max-width:600px) {
+    header {
+        width: 500px;
+    }
+}
+
 
 
 
