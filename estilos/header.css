@@ -38,6 +38,13 @@ header {
     color: var(--cor-dos-links-header);
 }
 
+.carrinho {
+    position: relative;
+    top: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
 .menu_mobile {
     display: flex;
     justify-content:start;
