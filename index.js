@@ -10,6 +10,10 @@ let proximo = document.querySelector('.proximo')
 let fechar = document.querySelector('.fechar')
 let conferir = document.querySelector('.conferir')
 let som = document.querySelector('.som')
+let abrir = document.querySelector('.abrir')
+let desc = document.querySelector('.desc')
+let historia = document.querySelector('.historia')
+let remove = document.querySelector('.remover')
 som.volume = 0.1;
 
 function menufechado() {
@@ -42,6 +46,18 @@ proximo.addEventListener('click', () => {
 conferir.addEventListener('click', () => {
     modal.style.display = 'none'
     som.play()
+})
+
+abrir.addEventListener('click', () => {
+    desc.style.display = 'block'
+    historia.style.heigth = '300px';
+    remove.style.display = 'block'
+})
+
+remove.addEventListener('click', () => {
+    desc.style.display = 'none'
+    remove.style.display = 'none'
+    abrir.style.display = 'block'
 })
 
 

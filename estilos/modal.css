@@ -30,6 +30,7 @@
     left: 270px;
     border-top-right-radius: 10px;
     cursor: pointer;
+    transition: 1s;
 }
 
 .proximo {

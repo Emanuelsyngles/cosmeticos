@@ -65,7 +65,6 @@ section > h1 {
 
 .desc_historia {
     width: 500px;
-    height: 200px;
     margin: auto;
     background-color: var(--cor-cards);
     border-radius: 10px;
@@ -88,6 +87,12 @@ section > h1 {
     font-family: 'Quicksand';
     margin-bottom: 10em;
     background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.desafio:hover {
+    background-color: #15072A;
+    transition: 1s;
 }
 
 .desafio > h1 {
@@ -97,11 +102,17 @@ section > h1 {
 }
 
 .feliz {
-    background-color: var(--cor-branca);
+    background-color: #3B5C55;
     height: 500px;
     background-repeat: no-repeat;
     font-family: 'Quicksand';
     margin-bottom: 10em;
+    transition: 1s;
+}
+
+.feliz:hover {
+    background-color: #32665b;
+    transition: 1s;
 }
 
 .feliz > h1 {
@@ -157,11 +168,5 @@ section > h1 {
     }
     .esmalte {
         width: 500px;
-    }
-}
-
-@media (max-width:750px) {
-    .desc_historia {
-        height: 310px;
     }
 }

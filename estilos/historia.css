@@ -1,0 +1,29 @@
+.abrir {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    position: absolute;
+    left: 0px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.remover {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    position: absolute;
+    left: 0px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.desc {
+    display: none;
+}
+
+
