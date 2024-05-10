@@ -14,6 +14,9 @@ section > h1 {
 
 .sessao_cards {
     margin: auto;
+    background-repeat: no-repeat;
+    background-position: 50%, 25px;
+    margin-top: 106px;
 }
 
 .sessao_cards > h1 {

@@ -2,11 +2,13 @@
 
 
 main {
-    background-color: #BEC2B1;
+    background-image: url(../img/fundo\ inicial.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
 .inicio {
-    background-color: #BEC2B1;
+    background-color: #D0ADA5;
 }
 
 .apresentacao {
