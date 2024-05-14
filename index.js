@@ -25,10 +25,9 @@ function menufechado() {
 
 function fecharmenu() {
     lista.style.display = 'none'
-    menumobile.style.background = '#BEC2B1'
+    menumobile.style.background = '#D0ADA5'
     menuclose.style.display = 'block'
     menustop.style.display = 'none'
-    menustop.style.background = '#fff'
 }
 
 fechar.addEventListener('click', () => {
