@@ -9,6 +9,7 @@ main {
 
 .inicio {
     background-color: #D0ADA5;
+    width: 100%;
 }
 
 .apresentacao {
@@ -44,4 +45,10 @@ main {
     object-fit: contain;
     border-radius: 30px;
     text-align: center;
+}
+
+@media (max-width:608px) {
+    .inicio {
+        width: 500px;
+    }
 }

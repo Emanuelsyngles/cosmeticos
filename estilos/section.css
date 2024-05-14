@@ -113,6 +113,10 @@ section > h1 {
     transition: 1s;
 }
 
+.feliz > img {
+    background-color: #32665b;
+}
+
 .feliz:hover {
     background-color: #32665b;
     transition: 1s;
