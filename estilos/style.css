@@ -14,11 +14,12 @@
 
 body {
     background-color: #C6A29A;
+    margin:auto;
 }
 
 :root {
     --cor-do-titulo-header:#a2261d;
-    --cor-dos-links-header: #636363;
+    --cor-dos-links-header: #bd008e;
     --cor-body:#EDD2C9;
     --cor-vermelha:#ff0303;
     --cor-h4-main: #a622ff;

@@ -1,105 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
 
-header {
-    background-color: #D0ADA5;
-    height: 100px;
-    margin-top: -50px;
-    width: 1000px;
-}
-
-.container {
+.menu {
     display: flex;
-    justify-content: center;
-    margin-top: 3em;
-}
-
-.container > ul > h2 {
-    color: var(--cor-do-titulo-header);
-    font-family: 'Madimi One';
-    margin-top: 1em;
-}
-
-.container > ul {
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 2em;
+    list-style-type: none;
+    padding: 0;
 }
 
-.container > ul > li {
+.menu li {
+    margin-right: 20px;
     list-style: none;
-    margin-top: 2em;
 }
 
-.container > ul > li > a{
+.menu li a {
     text-decoration: none;
-    font-family: 'Oswald';
     color: var(--cor-dos-links-header);
 }
 
 .carrinho {
-    position: relative;
-    top: 15px;
     width: 30px;
-    cursor: pointer;
 }
 
 .menu_mobile {
-    display: flex;
-    justify-content:start;
-    margin-top: -30px;
-    margin-left: 10px;
+    display: none;
+    width: 580px;
+}
+
+#menustop {
     display: none;
 }
 
-@media (max-width:834px) {
-    .container > ul {
+#ulmenu {
+    display: none;
+}
+
+#ulmenu li a {
+    color: var(--cor-dos-links-header);
+    text-decoration: none;
+}
+
+@media (max-width:750px) {
+    .menu {
         display: none;
-        width: 100%;
-        position: fixed;
-        transition: 1s;
     }
     .menu_mobile {
-        display:block;
-        margin-top: 5px;
-        cursor: pointer;
-        transition: 1s;
-        width: auto;
-        height: 120px;
-        margin-bottom: -80px;
-    }
-    .menu_mobile > ul {
-        display: none;
-    }
-    .menu_mobile > ul >li {
-        transition: 2s;
-        list-style: none;
-        margin-bottom: .4em;
-    }
-
-    .menu_mobile > ul > li > a{
-        text-decoration: none;
-        color: #e5e5e5;
-    }
-
-    #menustop {
-        display: none;
-    }
-    .carrinho {
-        position: absolute;
-        top: 2px;
-        left: 290px;
-        color: #fff;
+        display: block;
     }
 }
-
-@media (max-width:600px) {
-    header {
-        width: 500px;
-    }
-}
-
-
-
-
