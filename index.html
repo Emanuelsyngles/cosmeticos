@@ -4,31 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <title>Dingou cosméticos</title>
 </head>
-
 <body>
-    <div class="inicio">
-      <header>
-        <div class="container">
-          <ul class="menu">
-            <h2>Dingou|cosméticos</h2>
-            <li><a href="#">Cósméticos</a></li>
-            <li><a href="#">Perfumes e perfumaria</a></li>
-            <li><a href="#">Maquiagem</a></li>
-            <li><a href="#">Outros produtos</a></li>
-            <img src="img/carrinho.png" alt="carrinho de compras" class="carrinho">
-          </ul>
-        </div>
-        <div class="menu_mobile">
-          <img onclick="menufechado()" id="menuclose" src="img/iconemenu.png" alt="icone menu mobile fechado">
-          <img onclick="fecharmenu()" id="menustop" src="img/fecharmenu.png" alt="icone menu mobile aberto">
-          <ul id="ulmenu">
+  <div class="inicio">
+    <header>
+      <div class="container">
+        <ul class="menu_ini">
+          <h2>Dingou|cosméticos</h2>
+          <li><a href="#">Cósméticos</a></li>
+          <li><a href="#">Perfumes e perfumaria</a></li>
+          <li><a href="#">Maquiagem</a></li>
+          <li><a href="#">Outros produtos</a></li>
+          <img src="img/carrinho.png" alt="carrinho de compras" class="carrinho">
+        </ul>
+      </div>
+        <div class="mobile">
+          <img class="abrir_menu" src="img/iconemenu.png" alt="icone menu mobile fechado">
+          <img class="fechar_menu" src="img/fecharmenu.png" alt="icone menu mobile aberto">
+          <ul class="ulmenu">
             <li><a href="#">Cósméticos</a></li>
             <li><a href="#">Perfumes e perfumaria</a></li>
             <li><a href="#">Maquiagem</a></li>
@@ -37,19 +36,10 @@
         </div>
       </header>
       <main>
-        <!--<div class="modal">
-          <button class="fechar">X</button>
-          <h1>O que mudou?</h1>
-          <p class="texto">Olá equipe desenvolve, esse site sofreu algumas alterações feitas em javascript, clique em próximo para conferir as mudanças ou feche o modal e comece a navegar</p>
-          <p class="texto_1">Primeiro adicionei mostrar mais e menos na história da dingou.</p>
-          <p class="texto_2">Você também agora pode acessar uma tela de cadastro do usuário também clicando acima</p>
-          <button class="proximo">Próximo</button>
-          <button class="conferir">Navegar</button>
-          <audio src="sons/sfx-piano-effect6.mp3" class="som"></audio>
-        </div>-->
         <div class="apresentacao">
           <div class="frase">
           </div>
+
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -65,12 +55,24 @@
                     <img src="img/cesta.png" alt="cesta de cóstméticos">
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/lavanda.png" alt="lavanda">
+                    <img src="img/makeup.png" alt="lavanda">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/organico.png" alt="lavanda">
                 </div>
             <!---<div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
         </div>
       </main>
+        <div class="modal">
+          <h1>O que mudou?</h1>
+          <p class="texto">Olá equipe desenvolve, esse site sofreu algumas alterações feitas em javascript, clique em próximo para conferir as mudanças ou feche o modal e comece a navegar</p>
+          <p class="texto_1">Primeiro adicionei mostrar mais e menos na história da dingou.</p>
+          <p class="texto_2">O site sofreu uma alteração visual também, aproveite e navegue!</p>
+          <button class="proximo">Próximo</button>
+          <button class="conferir">Navegar</button>
+          <audio src="sons/sfx-piano-effect6.mp3" class="som"></audio>
+        </div>
     </div>
   <section class="sessao_cards">
     <h1>Nossos produtos</h1>
@@ -110,7 +112,7 @@
     <img src="img/makeup.png" class="make" alt="Maquiagem">
     <img src="img/organico.png" alt="organico">
   </div>
-  <section class="historia" style="width: 100%;">
+  <section class="historia">
     <div class="desc_historia">
       <abbr class="abbr_mais" title="Mostrar mais"><button class="abrir">+</button></abbr>
       <abbr title="Mostrar menos"><button class="remover">-</button></abbr>
@@ -122,11 +124,6 @@
         por tanto no que se diz ao quesito confiança e qualidade nossa loja com toda certeza vai te agradar.</h4>
     </div>
   </section>
-  <section class="desafio">
-    <img src="img/desafio.jpg" alt="mulher produzida">
-    <h1>Ousar na hora de se produzir</h1>
-  </section>
-
   <footer>
     <h2>Dingou|cosméticos</h2>
     <div class="redes">
@@ -141,7 +138,9 @@
     </div>
   </footer>
 </body>
-<script src="index.js"></script>
+<script src="index.js">
+   
+</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script>var swiper = new Swiper(".mySwiper", {
   navigation: {
@@ -153,5 +152,4 @@
     disableOnInteraction: false,
   }
 });</script>
-
 </html>

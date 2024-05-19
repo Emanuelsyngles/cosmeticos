@@ -1,39 +1,36 @@
-let menuclose = document.querySelector('#menuclose')
-let lista = document.querySelector('#ulmenu')
+let menuabrir = document.querySelector('.abrir_menu')
+let menufechar = document.querySelector('.fechar_menu')
 let menumobile = document.querySelector('.menu_mobile')
-let menustop = document.querySelector('#menustop')
+let lista = document.querySelector('.ulmenu')
 let modal = document.querySelector('.modal')
 let texto = document.querySelector('.texto')
 let texto1 = document.querySelector('.texto_1')
 let texto2 = document.querySelector('.texto_2')
 let proximo = document.querySelector('.proximo')
-let fechar = document.querySelector('.fechar')
 let conferir = document.querySelector('.conferir')
 let som = document.querySelector('.som')
 let abrir = document.querySelector('.abrir')
 let desc = document.querySelector('.desc')
 let historia = document.querySelector('.historia')
 let remove = document.querySelector('.remover')
-som.volume = 0.1;
 
-function menufechado() {
-    lista.style.display = 'block'
-    menumobile.style.background = '#244b55'
-    menuclose.style.display = 'none'
-    menustop.style.display = 'block'
-}
+document.addEventListener("DOMContentLoaded", function() {
+    var abrirMenu = document.querySelector('.abrir_menu');
+    var fecharMenu = document.querySelector('.fechar_menu');
+    var ulMenu = document.querySelector('.ulmenu');
 
-function fecharmenu() {
-    lista.style.display = 'none'
-    menumobile.style.background = ''
-    menuclose.style.display = 'block'
-    menustop.style.display = 'none'
-}
+    abrirMenu.addEventListener('click', function() {
+        ulMenu.style.display = 'block';
+        abrirMenu.style.display = 'none';
+        fecharMenu.style.display = 'inline';
+    });
 
-fechar.addEventListener('click', () => {
-    modal.style.display = 'none'
-})
-
+    fecharMenu.addEventListener('click', function() {
+        ulMenu.style.display = 'none';
+        abrirMenu.style.display = 'inline';
+        fecharMenu.style.display = 'none';
+    });
+});
 proximo.addEventListener('click', () => {
     texto.style.display = 'none'
     texto1.style.display = 'block'

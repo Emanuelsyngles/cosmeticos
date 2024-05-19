@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Madimi One', sans-serif;
+    text-align: center;
+    background-image: url(img/fundo\ inicial.jpg);
+    background-repeat: no-repeat;
+  }
+
+  
+:root {
+    --cor-do-titulo-header:#00F12F;
+    --cor-dos-links-header: #15741e;
+    --cor-body:#EDD2C9;
+    --cor-vermelha:#ff0303;
+    --cor-h4-main: #a622ff;
+    --cor-h3-main: #c7a35f;
+    --cor-h2-main: #2ec052;
+    --cor-h1-main: #396ddb;
+    --cor-h1-section:#068018;
+    --cor-cards:#ECDACE;
+    --cor-preta: #000;
+    --cor-branca:#fff;
+    --cor-amarela:rgb(255, 255, 45);
+    --cor-vermelha-clara: #EB6F5F;
+    --cor-roxa:#0F021A;
+    --verde-escuro:#5B7E6C;
+    --cor-do-footer: #277456;
+    --cor-menu:#241ba7;
+}
+
+
+  
+  .container, .container_1, .desc_historia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: left;
+  }
+  
+  .inicio {
+    text-align: center;
+    padding: 15px;
+    background-image: url(img/folha.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    background-color: #528358;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  .menu_ini {
+    display: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu_ini h2 {
+    color: #00f11c;
+  }
+
+  .menu_ini li{
+    margin: 0 15px;
+  }
+
+  .menu_ini li {
+    list-style: none;
+  }
+
+  .menu_ini li a {
+    text-decoration: none;
+    color: #47be1c;
+  }
+  
+  .menu_ini.carrinho {
+    margin-left: auto;
+  }
+
+  .mobile img {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .mobile ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mobile {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .mobile ul li  {
+    list-style: none;
+  }
+
+  .mobile ul li a {
+    text-decoration: none;
+    color: #00f11c;
+  }
+
+  
+  @media (max-width: 885px) {
+    .menu_ini {
+      display: none;
+      background-color: none;
+    }
+    .mobile {
+      display: block;
+    }
+    .mobile img {
+      position: absolute;
+      left: 0px;
+    }
+    .fechar_menu {
+      display: none;
+    }
+    .ulmenu {
+      display: none;
+    }
+}
+
+  .swiper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*Cards*/
+  .sessao_cards .container_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sessao_cards {
+    background-color: #c59e94;
+  }
+  
+  .card {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .cosmeticos img {
+    margin: 10px;
+    width: 100px;
+  }
+  
+  .historia {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+  }
+  
+  .desc_historia h2 {
+    margin-top: 0;
+  }
+  
+  .desc_historia abbr {
+    display: block;
+  }
+  
+  .desafio img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .redes img {
+    margin: 5px;
+    width: 40px;
+  }
+  
+  .links_finais a {
+    display: block;
+    margin: 5px 0;
+  }
+  
+
+
+/*Header inicial*/
+
+.swiper-slide > img {
+    width: 400px;
+}
+
+.apresentacao {
+    border: 4px solid #18ff93;
+    border-radius: 44% 56% 50% 50% / 39% 22% 78% 61% ;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--cor-dos-links-header);
+}
+
+.carrinho {
+    width: 30px;
+}
+
+.menu_mobile {
+    display: none;
+    width: 580px;
+}
+
+#menustop {
+    display: none;
+}
+
+#ulmenu {
+    display: none;
+}
+
+#ulmenu li a {
+    color: var(--cor-dos-links-header);
+    text-decoration: none;
+}
+
+@media (max-width:750px) {
+
+}
+
+/*Section*/
+
+section {
+    background-color: #EDD2C9;
+}
+
+section > h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family:'Quicksand' ;
+    color: var(--cor-h1-section);
+}
+
+.sessao_cards {
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: 50%, 25px;
+    margin-top: 106px;
+}
+
+.sessao_cards > h1 {
+    margin-bottom: 2em;
+}
+
+.container_1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card {
+    background-color: var(--cor-cards);
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    font-family: 'madimi one';
+}
+
+.card:hover {
+    width: 200px;
+    border-radius: 15px;
+    position:relative;
+    top: -10px;
+}
+
+.historia {
+    margin-top: 5em;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.historia > h1 {
+    transform: rotate(-50deg);
+    color: var(--cor-vermelha);
+}
+
+.historia > h2 {
+    margin-left: 1em;
+}
+.historia > h3 {
+    transform: rotate(-20deg);
+}
+
+.desc_historia {
+    width: 500px;
+    margin: auto;
+    background-color: var(--cor-cards);
+    border-radius: 10px;
+    font-family:sans-serif;
+    background: rgb(38,44,138);
+    background: linear-gradient(281deg, rgba(38,44,138,1) 4%, rgba(0,28,79,1) 34%);
+    width: 100%;
+    color: var(--cor-preta);
+    margin-bottom: 3em;
+    color: var(--cor-branca);
+}
+
+.desc_historia > h4 {
+    margin-top: 3em;
+}
+
+.desafio {
+    background-color: var(--cor-roxa);
+    width: 00px;
+    height: 500px;
+    font-family: 'Quicksand';
+    margin-bottom: 10em;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.desafio:hover {
+    background-color: #15072A;
+    transition: 1s;
+}
+
+.desafio > h1 {
+    text-align: center;
+    color: aliceblue;
+    margin-top: -20%;
+}
+
+.cosmeticos  {
+    text-align: center;
+}
+
+@media (max-width:1300px) {
+    .desafio{
+        display: flex;
+    }
+    .desafio > h1 {
+        margin-top: 20%;
+    }
+
+
+    .feliz > h1 {
+        display: flex;
+        margin-left: 20px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 950px) {
+    .desafio {
+        margin-bottom: 1em;
+    }
+    .desafio > h1 {
+        display: flex;
+        margin-top: 400px;
+        margin-left: -8em;
+    }
+    .feliz > h1 {
+        display: flex;
+        margin-left: 10px;
+        margin-top: -300px;
+        width: 350px;
+    }
+    .coco {
+        display: none;
+    }
+    .make {
+        width: 400px;
+    }
+    .batom {
+        width: 500px;
+    }
+    .esmalte {
+        width: 500px;
+    }
+}
+
+
+/*historia*/
+
+.desc_historia {
+    background-color: #00f7ff;
+}
+
+.abrir {
+    background-color: #026d05;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    position: absolute;
+    left: 0px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.remover {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    position: absolute;
+    left: 0px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.desc {
+    display: none;
+}
+
+/*Footer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+
+footer {
+    background-color: var(--cor-do-footer);
+}
+
+footer > h2 {
+    color: var(--cor-do-titulo-header);
+    font-family: 'Madimi One';
+}
+
+
+.links_finais > a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor-preta);
+    font-size: 25px;
+}
+
+.links_finais > a:hover {
+    color: var(--cor-amarela);
+    transition: .5s;
+}
+
+.redes > img{
+    cursor: pointer;
+}
+
+/*Modal*/
+
+.modal {
+  position: fixed;
+  transform: translate(50%, 50%);
+  width: 300px;
+  height: 200px;
+  background-color: #00cc41bb;
+  color: var(--cor-branca);
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  top: 10px;
+}
+
+.modal > h1 {
+  margin-bottom: .5em;
+}
+
+.texto_1 {
+  display: none;
+}
+
+.texto_2 {
+  display: none;
+}
+
+.fechar {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  width: 30px;
+  position: fixed;
+  left: 270px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.proximo {
+  margin-top: 30px;
+  border: none;
+  background-color: #2e9522;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.conferir {
+  margin-top: 30px;
+  border: none;
+  background-color: #10c3c9;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 95px;
+}
+
+
+@media (max-width:490px) {
+  .modal {
+    right:125px;
+    width: 250px;
+  }
+}
+
+
+
