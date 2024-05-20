@@ -427,6 +427,10 @@ section > h1 {
     background-color: #00f7ff;
 }
 
+.titulo_historia {
+  text-align: center;
+}
+
 .abrir {
     background-color: #026d05;
     color: #fff;
@@ -434,19 +438,20 @@ section > h1 {
     padding: 10px;
     font-size: 30px;
     position: absolute;
-    left: 0px;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
     transform: 1s;
 }
 
 .remover {
-    background-color: #fff;
+    background-color: #026d05;
+    color: #fff;
     border: none;
     padding: 10px;
     font-size: 30px;
     position: absolute;
-    left: 0px;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
     display: none;
@@ -494,7 +499,7 @@ footer > h2 {
   transform: translate(50%, 50%);
   width: 300px;
   height: 200px;
-  background-color: #00cc41bb;
+  background-color: #005ccc;
   color: var(--cor-branca);
   text-align: center;
   border-radius: 10px;
@@ -546,7 +551,7 @@ footer > h2 {
   cursor: pointer;
   display: none;
   position: absolute;
-  left: 95px;
+  left: 35%;
 }
 
 
