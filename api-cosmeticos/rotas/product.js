@@ -6,7 +6,7 @@ let products = [
     id: 1,
     name: "creme de pele",
     price: 29.99,
-    description: "Sua pele mácia igual a de um BêBê",
+    description: "Hidratação da pele",
   },
   {
     id: 2,
