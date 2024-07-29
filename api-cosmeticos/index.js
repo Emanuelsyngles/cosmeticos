@@ -1,13 +1,15 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const path = require("path");
 const app = express();
+const cors = require("cors");
 const port = 3000;
 
 app.use(express.json());
 
+app.use(cors());
 let produtosRouter = require("./rotas/product");
 const connectDB = require("./db");
+const { error } = require("console");
 
 connectDB();
 

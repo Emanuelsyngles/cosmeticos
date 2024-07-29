@@ -13,6 +13,31 @@ let products = [
     name: "shampoo",
     price: 17.65,
     description: "para todos os tipos de cabelo",
+    image: "/imagens/cosmetico.png",
+  },
+  {
+    id: 3,
+    name: "Esmaltes",
+    price: "5.50",
+    description: "Esmalte de unhas",
+  },
+  {
+    id: 4,
+    name: "Máscara Facial",
+    price: 12.99,
+    description: "Máscara para revitalização da pele",
+  },
+  {
+    id: 5,
+    name: "Creme Anti-Idade",
+    price: 45.0,
+    description: "Creme para redução de rugas e linhas finas",
+  },
+  {
+    id: 6,
+    name: "Protetor Solar",
+    price: 25.75,
+    description: "Protetor solar para todos os tipos de pele",
   },
 ];
 
@@ -29,32 +54,6 @@ Router.get("/:id", (req, res) => {
   } else {
     res.status(404).send("Produto não encontrado");
   }
-});
-
-Router.post("/", (req, res) => {
-  const novoProduto = req.body;
-  novoProduto.id = products.length + 1;
-  products.push(novoProduto);
-  res.status(201).json(novoProduto);
-});
-
-Router.put("/:id", (req, res) => {
-  const productId = parseInt(req.params.id, 10);
-  const productIndex = products.findIndex((p) => p.id === productId);
-
-  if (productIndex !== -1) {
-    products[productIndex] = { ...products[productIndex], ...req.body };
-    res.json(products[productIndex]);
-  } else {
-    res.status(404).send("Produto não encontrado");
-  }
-});
-
-Router.delete("/:id", (req, res) => {
-  const productId = parseInt(req.params.id, 10);
-  products = products.filter((p) => p.id !== productId);
-
-  res.status(204).send();
 });
 
 module.exports = Router;
