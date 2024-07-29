@@ -11,12 +11,12 @@
   }
   
   body, html {
-    height: 100%;
+    margin: 0 auto;
     font-family: 'Madimi One', sans-serif;
     text-align: center;
     background-repeat: no-repeat;
     max-width: 2000px;
-    margin: 0 auto;
+    background-color: #8cb4b5;
   }
 
   
@@ -53,17 +53,16 @@
   .inicio {
     text-align: center;
     padding: 15px;
-    background-image: url(img/folha.jpg);
+    margin: 0 auto;
     background-repeat: no-repeat;
+    margin-top: -15px;
   }
   
   header {
-    background-color: #528358;
-    border-radius: 10px;
+    background-color: #0c100d;
+    width: 100%;
     padding: 10px 0;
     margin-bottom: 10px;
-    margin-top: -20px;
-    width: 100%;
   }
 
   .menu_ini {
@@ -126,9 +125,11 @@
     text-decoration: none;
     color: #00f11c;
   }
-
   
   @media (max-width: 885px) {
+    header {
+      margin-top: -20px;
+    }
     .menu_ini {
       display: none;
       background-color: none;
@@ -208,7 +209,6 @@
     display: block;
     margin: 5px 0;
   }
-  
 
 
 /*Header inicial*/
@@ -220,6 +220,12 @@
 .apresentacao {
     border: 4px solid #18ff93;
     border-radius: 44% 56% 50% 50% / 39% 22% 78% 61% ;
+}
+
+.produto {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2em;
+  font-size: 30px;
 }
 
 .menu {
@@ -262,10 +268,6 @@
     text-decoration: none;
 }
 
-@media (max-width:750px) {
-
-}
-
 /*Section*/
 
 section {
@@ -276,7 +278,7 @@ section > h1 {
     text-align: center;
     font-size: 40px;
     font-family:'Quicksand' ;
-    color: var(--cor-h1-section);
+    color: #fff;
 }
 
 .sessao_cards {
@@ -284,6 +286,7 @@ section > h1 {
     background-repeat: no-repeat;
     background-position: 50%, 25px;
     margin-top: 106px;
+    background-color: #138576;
 }
 
 .sessao_cards > h1 {
@@ -295,6 +298,8 @@ section > h1 {
     justify-content: flex-start;
     flex-wrap: wrap;
     text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .card {
@@ -319,6 +324,7 @@ section > h1 {
     margin-top: 5em;
     text-align: center;
     margin-bottom: 5em;
+    background: none;
 }
 
 .historia > h1 {
@@ -351,26 +357,7 @@ section > h1 {
     margin-top: 3em;
 }
 
-.desafio {
-    background-color: var(--cor-roxa);
-    width: 00px;
-    height: 500px;
-    font-family: 'Quicksand';
-    margin-bottom: 10em;
-    background-repeat: no-repeat;
-    transition: 1s;
-}
 
-.desafio:hover {
-    background-color: #15072A;
-    transition: 1s;
-}
-
-.desafio > h1 {
-    text-align: center;
-    color: aliceblue;
-    margin-top: -20%;
-}
 
 .cosmeticos  {
     text-align: center;
@@ -467,7 +454,8 @@ section > h1 {
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
 
 footer {
-    background-color: var(--cor-do-footer);
+  background-color: #005ccc;
+  height: 100%;
 }
 
 footer > h2 {
@@ -477,7 +465,6 @@ footer > h2 {
 
 
 .links_finais > a {
-    display: flex;
     justify-content: center;
     text-decoration: none;
     color: var(--cor-preta);
@@ -565,27 +552,26 @@ footer > h2 {
 }
 
 #products-container {
-  background-color: #005ccc;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  max-width: 1500px;
+  max-height: 2500px;
+  margin-top: 5em;
   gap: 1em;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
-.product {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
+.product{
   width: 200px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  background-color: #5ca3fa;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.product h2 {
-  margin-top: 0;
-}
 
 @media (max-width:490px) {
   .modal {
