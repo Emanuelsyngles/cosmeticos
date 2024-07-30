@@ -266,7 +266,7 @@ section h3 {
 
 footer {
   background-color: #1b472f;
-  height: 300px;
+  height: auto;
   width: 100%;
 }
 
@@ -330,13 +330,10 @@ footer h3 {
       height: 220px;
       margin-top: -20px;
   }
-  .swiper-slide img {
-    width: 100%;
-    height: auto; 
-    max-height: 100%; 
-    object-fit: cover;
-    margin-top: 10px;
-  }
+  
+.conteudo_fim img:hover {
+  padding: 10px;
+}
 }
 
 @media (min-width: 808px) {
@@ -354,6 +351,9 @@ footer h3 {
       border-radius: 10px;
       transition: .5s;
   }
+  .card:hover {
+    padding: 0;
+  }
 }
 
 @media (max-width:490px) {
@@ -362,7 +362,7 @@ footer h3 {
     height: auto; 
     max-height: 100%; 
     object-fit: cover;
-    margin-top: 110px;
+    margin-top: 90px;
   }
 }
 
