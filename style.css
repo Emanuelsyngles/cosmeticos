@@ -28,6 +28,7 @@ body {
   color: #fff;
   position: fixed;
   width: 100%;
+  height: 50px;
   z-index: 1000;
 }
 
@@ -337,6 +338,7 @@ footer h3 {
 }
 
 @media (min-width: 808px) {
+
   .nav_mobile {
       display: none;
   }
