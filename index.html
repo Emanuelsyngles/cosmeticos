@@ -6,133 +6,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <title>Dingou Cosméticos</title>
 </head>
 
 <body>
-  <div class="inicio">
-    <header>
-      <div class="container">
-        <ul class="menu_ini">
-          <h2>Dingou | Cosméticos</h2>
-          <li><a href="#">Cósméticos</a></li>
-          <li><a href="#">Perfumes e Perfumaria</a></li>
-          <li><a href="#">Maquiagem</a></li>
-          <li><a href="#">Outros Produtos</a></li>
-          <img src="img/carrinho.png" alt="Carrinho de Compras" class="carrinho">
-        </ul>
-      </div>
-      <div class="mobile">
-        <img class="abrir_menu" src="img/iconemenu.png" alt="Ícone Menu Mobile Fechado">
-        <img class="fechar_menu" src="img/fecharmenu.png" alt="Ícone Menu Mobile Aberto">
-        <ul class="ulmenu">
-          <li><a href="#">Cósméticos</a></li>
-          <li><a href="#">Perfumes e Perfumaria</a></li>
-          <li><a href="#">Maquiagem</a></li>
-          <li><a href="#">Outros Produtos</a></li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <div class="apresentacao">
-        <div class="frase"></div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/principal.png" data-swiper-autoplay="1000" alt="Imagem Principal Ilustrativa">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/secundaria.png" alt="Perfume e Flores Ilustrativos">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/mulher-removebg-preview.png" alt="Mulher Ilustrativa">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/cesta.png" alt="Cesta de Cosméticos">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/makeup.png" alt="Maquiagem">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/organico.png" alt="Orgânico">
-            </div>
-          </div>
+  <header>
+    <div class="nav">
+      <h1 class="titulo_principal">Dingou|Cosméticos</h1>
+      <ul>
+        <li><a class="contato" href="#">Produtos</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </div>
+    <div class="nav_mobile">
+      <ul>
+        <img src="img/menu.png" alt="menu mobile" class="mobile">
+        <li><a class="contato" href="#">Produtos</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/inicio.jpeg" alt="Image 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/perfumeini.jpeg" alt="Image 2">
         </div>
       </div>
-      <section class="sessao_cards">
-        <h1>Categorias</h1>
-        <div class="container_1">
-          <div class="card">
-            <h3>Esmaltes</h3>
-            <img src="img/esmaltes.jpg" alt="Esmalte Ilustrativo Card de Esmaltes">
-            <p>Os esmaltes mais elegantes no cuidado com a aparência das unhas.</p>
-          </div>
-          <div class="card">
-            <h3>Maquiagens</h3>
-            <img src="img/ilustrativomaquiagem.jpg" alt="Imagem Ilustrativa Card de Maquiagens">
-            <p>A nova forma de se maquiar com a nova linha Glamour da Dingou.</p>
-          </div>
-          <div class="card">
-            <h3>Produtos de Rosto</h3>
-            <img src="img/produtorosto.jpg" alt="Imagem Ilustrativa de Produtos de Rosto">
-            <p>O creme que deixa seu rosto limpo com ativação imediata só com os cremes da linha Glossit.</p>
-          </div>
-          <div class="card">
-            <h3>Óleo de Cabelo</h3>
-            <img src="img/óleo.jpg" alt="Imagem Ilustrativa Óleo de Cabelo">
-            <p>Óleo para o seu cabelo ficar sedoso e macio. Compre já!</p>
-          </div>
-          <div class="card">
-            <h3>Perfumária</h3>
-            <img src="img/perfume.jpg" alt="Perfume Ilustrativo">
-            <p>A fragrância do lavanda é a oitava maravilha do mundo.</p>
-          </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </main>
+  <section>
+    <h3>Produtos incriveis com até 50% off</h3>
+    <div class="conteudo">
+      <div class="card">
+        <h4>Perfumária</h4>
+        <img src="img/perfumaria.jpg" alt="Perfumes ilustrativo">
+      </div>
+      <div class="card">
+        <h4>Cremes</h4>
+        <img src="img/cremes.jpg" alt="creme ilustrativo">
+      </div>
+      <div class="card">
+        <h4>Cosméticos</h4>
+        <img src="img/maquiagens.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="produtos_ini">
+    <h3>Nossos produtos</h3>
+    <div id="products-container"></div>
+  </section>
+  <section class="conteudo">
+    <div class="conteudo_fim">
+      <img class="maquiada" src="img/maquiagem.png" alt="Mulher maquiada">
+      <img class="maquiada" src="img/mulher.jpeg" alt="Mulher maquiada">
+    </div>
+  </section>
+  <footer>
+    </div>
+    <div class="redes_contato">
+      <div class="info">
+        <h4>Dingou|Cosméticos</h4>
+        <p>&copy; 2024</p>
+      </div>
+      <div class="info">
+        <h4>Customização</h4>
+        <p>Dingou</p>
+      </div>
+      <div class="info">
+        <h4>Saber mais</h4>
+        <a href="#">
+          <p>Lojas</p>
+        </a>
+        <a>
+          <p>contatos</p>
+        </a>
+        <a target="_blank" href="#">
+          <p>Sobre</p>
+        </a>
+      </div>
+      <div class="info">
+        <h4>Contatos</h4>
+        <div class="logos_redes">
+
+          <img src="img/insta.png" alt="logo instagram">
+          <a><img src="img/whatsapp.png" alt="logo whatsapp"></a>
         </div>
-      </section>
-      <div class="cosmeticos">
-        <img src="img/creme.png" alt="Creme Ilustrativo">
-        <img src="img/cosmetico.png" alt="Cosmético">
-        <img src="img/batom.png" class="batom" alt="Batom">
-        <img src="img/makeup.png" class="make" alt="Maquiagem">
-        <img src="img/organico.png" alt="Orgânico">
       </div>
-      <h2 class="produto">Nossos Produtos</h2>
-      <div id="products-container"></div>
-    </main>
-    <footer>
-      <h2>Dingou | Cosméticos</h2>
-      <div class="redes">
-        <h2>Nossas Redes</h2>
-        <img src="img/instagram.png" alt="Instagram">
-        <img src="img/linkedin.png" alt="LinkedIn">
-        <img src="img/email.png" alt="Email">
-      </div>
-      <div class="links_finais">
-        <a href="https://github.com/Emanuelsyngles" target="_blank">Desenvolvedor</a>
-        <a href="#">Mais Produtos</a>
-      </div>
-    </footer>
-    <script src="main.js"></script>
+  </footer>
 </body>
 
 </html>
+<script src="main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
 
-<script src="index.js">
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>var swiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+  const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    effect: 'coverflow',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    }
-  });</script>
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // Adicione mais opções conforme necessário
+  });
+</script>
 
 </html>
