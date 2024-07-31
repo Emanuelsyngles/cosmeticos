@@ -44,7 +44,9 @@ body {
 .nav ul li a {
   text-decoration: none;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding: 20px;
+  padding: 30px;
+  position: relative;
+  top: -5px;
   color: #fff;
   cursor: pointer;
 }
@@ -58,12 +60,29 @@ a {
   cursor: pointer;
 }
 
+.nav h1 {
+  margin-top: 0.35em;
+}
+
 .mobile {
   padding: 5px;
   border-radius: 10px;
   margin-right: 400px;
   cursor: pointer;
   margin-top: -10px;
+}
+
+#fechar {
+  display: none;
+  cursor: pointer;
+  margin-left:10px;
+}
+
+.carrinho_nav {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .nav_mobile {
@@ -85,10 +104,9 @@ a {
   background-color: #839481;
   margin-left: 10px;
   height: 300px;
-  width: 280px;
+  width: 120px;
   margin-top: 10px;
   border-radius: 10px;
-  transition: .5s;
 }
 
 .nav_mobile ul {
@@ -231,6 +249,7 @@ section h3 {
 }
 
 .product h2 {
+  margin-top: 3em;
   margin-bottom: 0.5em;
 }
 
@@ -322,6 +341,9 @@ footer h3 {
   .nav ul li a {
       display: none;
   }
+  .carrinho_nav {
+    display: none;
+  }
   .nav h1 {
       margin-top: 5px;
       margin-right: -160px;
@@ -355,6 +377,12 @@ footer h3 {
   }
   .card:hover {
     padding: 0;
+  }
+}
+
+@media(max-width:1500px) {
+  .conteudo {
+    max-width: 1050px;
   }
 }
 

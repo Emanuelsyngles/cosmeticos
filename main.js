@@ -24,7 +24,6 @@ function displayProducts(products) {
       <h2>${product.name}</h2>
       <p>Preço: R$ ${product.price}</p>
       <p>${product.description}</p>
-      <img src="${product.image}" alt="${product.name}">
     `;
     productsContainer.appendChild(productElement);
   });

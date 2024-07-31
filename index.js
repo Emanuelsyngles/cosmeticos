@@ -1,12 +1,12 @@
-let contact = document.getElementById("contact");
-let fechado = document.getElementById("fechado");
+/*let abrir = document.getElementById("abrir");
+let fechar = document.getElementById("fechar");
 
-sair.addEventListener("click", () => {
-  contact.style.display = "none";
-  fechado.style.display = "block";
+abrir.addEventListener("click", () => {
+  abrir.style.display = "none";
+  fechar.style.display = "block";
 });
 
-fechado.addEventListener("click", () => {
-  contact.style.display = "block";
-  fechado.style.display = "none";
-});
+fechar.addEventListener("click", () => {
+  fechar.style.display = "none";
+  abrir.style.display = "block";
+});*/
