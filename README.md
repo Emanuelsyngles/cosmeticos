@@ -1,1 +1,2 @@
-Esse projeto visa o consumo de uma API de produtos.
+
+Acesse clicando no link: [projeto](https://cosmeticos.netlify.app/)
