@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use(cors());
 let produtosRouter = require("../rotas/product");
-const connectDB = require("./db");
+const connectDB = require("../db");
 const { error } = require("console");
 
 connectDB();
